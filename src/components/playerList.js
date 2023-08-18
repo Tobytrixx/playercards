@@ -6,46 +6,47 @@ import Playercomp from './player';
 function Players() {
     const players = [{
         name: 'Mbappe',
-        age: 29,
+        age: 24,
         team: 'PSG',
-        nationality: 'Argentina',
-        jerseyNumber: 12,
-        image: 'https://th.bing.com/th/id/R.643ecdff43f940be023783f025559b9f?rik=uDA3EwfQZMVpvQ&pid=ImgRaw&r=0',
+        nationality: 'France',
+        jerseyNumber: 10,
+        image: 'https://s.hs-data.com/bilder/spieler/gross/284095.jpg',
     },
     {
-        name: 'Mbappe',
-        age: 29,
-        team: 'PSG',
-        nationality: 'Argentina',
-        jerseyNumber: 12,
-        image: 'https://th.bing.com/th/id/R.643ecdff43f940be023783f025559b9f?rik=uDA3EwfQZMVpvQ&pid=ImgRaw&r=0',
+        name: 'Lewandowski',
+        age: 34,
+        team: 'FC Barcelona',
+        nationality: 'Poland',
+        jerseyNumber: 9,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ62XWfJPDrYlFggbbyNkpcAFdvI3AptgmZjA&usqp=CAU',
     },
     {
-        name: 'Mbappe',
-        age: 29,
-        team: 'PSG',
+        name: 'Messi',
+        age: 36,
+        team: 'Inter Miami CF',
         nationality: 'Argentina',
-        jerseyNumber: 12,
-        image: 'https://th.bing.com/th/id/R.643ecdff43f940be023783f025559b9f?rik=uDA3EwfQZMVpvQ&pid=ImgRaw&r=0',
+        jerseyNumber: 10,
+        image: 'https://m.media-amazon.com/images/M/MV5BZmVmOWY4NTMtYjk5YS00YzE4LThmYzMtNGFiNDE2ZDQ3MjRjXkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_QL75_UY207_CR6,0,140,207_.jpg',
     },
     {
-        name: 'Mbappe',
-        age: 29,
+        name: 'Halland',
+        age: 23,
         team: 'PSG',
         nationality: 'Argentina',
-        jerseyNumber: 12,
-        image: 'https://th.bing.com/th/id/R.643ecdff43f940be023783f025559b9f?rik=uDA3EwfQZMVpvQ&pid=ImgRaw&r=0',
+        jerseyNumber: 9,
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs3TYvfxhgWFV_IBk79qyB1e6wUR2qL04_Vg&usqp=CAU',
     },
     ];
     return (
-        <div>
+        <div className='container'>
             {players.map((value, index) => (
                 <Playercomp 
                 name={value.name} 
                 age={value.age}
                 team={value.team} 
                 jerseyNumber={value.jerseyNumber}
-                nationality={value.nationality} 
+                nationality={value.nationality}
+                image={value.image} 
                 />
                 ))}
             </div>
